@@ -10,7 +10,7 @@ env:
   PYTHON_VERSION: 3.x
 
 jobs:
-  documentation:
+  pythonci:
     name: Build documentation
       - name: Checkout repository
         uses: actions/checkout@v2
