@@ -1,0 +1,31 @@
+name: pythonci
+
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+jobs:
+  documentation:
+    name: Build documentation
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python runtime
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Python dependencies
+        run: |
+          pip install .
+          pip install \
+            mkdocs-minify-plugin>=0.3 \
+            mkdocs-redirects>=1.0 \
+            mkdocs-rss-plugin>=0.17
+            
+      - name: Deploy documentation
+        run: |
+          mkdocs gh-deploy --force
+          mkdocs --version                  
