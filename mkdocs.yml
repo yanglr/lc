@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2016-2021 Martin Donath <martin.donath@yanglr.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -20,15 +20,15 @@
 
 # Project information
 site_name: 玩转力扣
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_url: https://yanglr.github.io/lc/
 site_author: Martin Donath
 site_description: >-
   Create a branded static site from a set of Markdown files to host the
   documentation of your Open Source or commercial project
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: yanglr/lc
+repo_url: https://github.com/yanglr/lc
 edit_uri: ""
 
 # Copyright
@@ -114,17 +114,17 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
+      link: https://github.com/yanglr
     - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
+      link: https://gitter.im/yanglr/lc
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+      link: https://hub.docker.com/r/yanglr/lc/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+      link: https://twitter.com/yanglr
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk/
+      link: https://linkedin.com/in/yanglr/
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/squidfunk
+      link: https://instagram.com/yanglr
 
 # Extensions
 markdown_extensions:
@@ -151,8 +151,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: yanglr
+      repo: lc
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:

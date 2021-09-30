@@ -2,7 +2,7 @@
 template: overrides/main.html
 ---
 
-# Setting up navigation
+# 10 修改导航 navigation
 
 A clear and concise navigation structure is an important aspect of good project 
 documentation. Material for MkDocs provides a multitude of options to configure
