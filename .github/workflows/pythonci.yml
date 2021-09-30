@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - main
+
+env:
+  PYTHON_VERSION: 3.x
+
 jobs:
   documentation:
     name: Build documentation
