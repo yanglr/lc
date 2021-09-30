@@ -35,7 +35,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+          git clone git@github.com:squidfunk/mkdocs-material-insiders.git mkdocs-material
+          pip install -e mkdocs-material-insiders
+          cp mkdocs-material-insiders/mkdocs.yml mkdocs.yml
+          echo "THEME_DIR=mkdocs-material-insiders/material" >> $GITHUB_ENV
 
       - name: Deploy documentation
         run: |
