@@ -33,9 +33,9 @@ jobs:
       - name: Install Insiders build
         if: github.event.repository.fork == false
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone git@github.com:squidfunk/mkdocs-material-insiders.git mkdocs-material
+          git clone --depth 1 https://${GITHUB_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
           pip install -e mkdocs-material-insiders
           cp mkdocs-material-insiders/mkdocs.yml mkdocs.yml
           echo "THEME_DIR=mkdocs-material-insiders/material" >> $GITHUB_ENV
