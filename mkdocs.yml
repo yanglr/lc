@@ -19,7 +19,7 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
+site_name: 玩转力扣
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
@@ -47,8 +47,8 @@ theme:
   include_search_page: false
   search_index_only: true
 
-  # Default values, taken from mkdocs_theme.yml
-  language: en
+  # Default values
+  language: zh
   features:
     - content.code.annotate
     - content.tabs.link
@@ -87,7 +87,7 @@ theme:
 
 # Plugins
 plugins:
-  - search
+  # - search
   - redirects:
       redirect_maps:
         changelog/insiders.md: insiders/changelog.md
