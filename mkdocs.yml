@@ -87,7 +87,9 @@ theme:
 
 # Plugins
 plugins:
-  # - search
+  - search:
+      separator: '[\s\-\.]+'
+      prebuild_index: true 
   - redirects:
       redirect_maps:
         changelog/insiders.md: insiders/changelog.md
