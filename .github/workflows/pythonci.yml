@@ -6,7 +6,6 @@ on:
       - master
       - main
 jobs:
-jobs:
   documentation:
     name: Build documentation
       - name: Checkout repository
